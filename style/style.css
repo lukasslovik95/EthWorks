@@ -72,7 +72,7 @@ main { flex-grow: 1; position: relative; margin-top: 70px; }
 
 .btn--scroll-to {
 	left: 23px;
-	top: 125px;
+	top: 100px;
 }
 
 .intro-div__video {

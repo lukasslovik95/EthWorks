@@ -11,12 +11,12 @@
                             <h1 class="mb-50 mb-sm-70">
                                 The first fully-automatic social crypto trading platform with real crypto currency
                             </h1>
-                            <form class="subscribe-form">
+                            <form class="subscribe-form" id="subscribeForm">
                                 <div class="form-field">
                                     <label class="mb-10 mb-sm-20">Subscribe and get the lastes information</label>
-                                    <input type="email" placeholder="Enter your email">
+                                    <input type="email" placeholder="Enter your email" required>
                                 </div>
-                                <button class="btn btn__primary non-select">Subscribe</button>
+                                <button class="btn btn__primary non-select" type="submit" form="subscribeForm" value="Submit">Subscribe</button>
                             </form>
                         </div>
                         <div class="d-flex justify-content-center justify-content-xl-end">
@@ -58,8 +58,8 @@
         <section class="container t-center pt-30 pt-md-50 pt-xl-0 pb-50 pb-xl-80 bx-rel">
             <a class="anchor" id="zespol"></a>
             <h2 class="h3 fw-400 ls-12 color-blue mb-15 mb-md-25 mb-lg-40 non-select">TEAM</h2>
-            <div id="slickCustomers" class="bx-occasions">
-                <article class="team-section__member">
+            <div id="slickCustomers">
+                <article class="team-section__member" data-aos="fade-up" data-aos-duration="600" data-aos-anchor-placement="bottom-bottom">
                     <img src="img/edgar-morrison-photo.jpg" title="Edgar Morrison">
                     <h3 class="color-light-blue h2 fw-400 mb-10 mb-md-15">Edgar Morrison</h3>
                     <p class="fs-13 color-dark-blue mb-10 mb-md-15">CEO</p>
@@ -77,7 +77,7 @@
                         </a>
                     </div>
                 </article>
-                <article class="team-section__member">
+                <article class="team-section__member" data-aos="fade-up" data-aos-duration="900" data-aos-anchor-placement="bottom-bottom">
                     <img src="img/moe-martin-photo.jpg" title="Mae Martin">
                     <h3 class="color-light-blue h2 fw-400 mb-10 mb-md-15">Mae Martin</h3>
                     <p class="fs-13 color-dark-blue mb-10 mb-md-15">CTO</p>
@@ -95,7 +95,7 @@
                         </a>
                     </div>
                 </article>
-                <article class="team-section__member">
+                <article class="team-section__member" data-aos="fade-up" data-aos-duration="1200" data-aos-anchor-placement="bottom-bottom">
                     <img src="img/david-banks-photo.jpg" title="David Banks">
                     <h3 class="color-light-blue h2 fw-400 mb-10 mb-md-15">David Banks</h3>
                     <p class="fs-13 color-dark-blue mb-10 mb-md-15">CFO</p>
@@ -113,7 +113,7 @@
                         </a>
                     </div>
                 </article>
-                <article class="team-section__member">
+                <article class="team-section__member" data-aos="fade-up" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">
                     <img src="img/frederick-parsons-photo.jpg" title="Frederick Parsons">
                     <h3 class="color-light-blue h2 fw-400 mb-10 mb-md-15">Frederick Parsons</h3>
                     <p class="fs-13 color-dark-blue mb-10 mb-md-15">COO</p>
@@ -184,7 +184,7 @@
             </div>
         </div>
         <!-- Modal Member 2 -->
-        <div class="modal fade" id="memberModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal fade" id="memberModal2" tabindex="-1" role="dialog" aria-labelledby="memberModal2" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header justify-content-end">
@@ -203,7 +203,7 @@
             </div>
         </div>
         <!-- Modal Member 3 -->
-        <div class="modal fade" id="memberModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal fade" id="memberModal3" tabindex="-1" role="dialog" aria-labelledby="memberModal3" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header justify-content-end">
@@ -222,7 +222,7 @@
             </div>
         </div>
         <!-- Modal Member 4 -->
-        <div class="modal fade" id="memberModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal fade" id="memberModal4" tabindex="-1" role="dialog" aria-labelledby="memberModal4" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header justify-content-end">
@@ -245,20 +245,20 @@
         <section class="container-fluid bg-navy-blue pt-85 pb-50 bx-rel">
             <a class="anchor" id="kontakt"></a>
             <div class="container-small p-0">
-                <h2 class="h3 fw-400 ls-12 color-white t-center mb-25">CONTACT US</h2>
-                <p class="fs-18 color-white t-center mb-50">Most calendars are designed for teams. Slate is designed for freelancers</p>
-                <form class="contact-form">
+                <h2 class="h3 fw-400 ls-12 color-white t-center mb-25" data-aos="fade-right" data-aos-duration="600" data-aos-anchor-placement="bottom-bottom">CONTACT US</h2>
+                <p class="fs-18 color-white t-center mb-50" data-aos="fade-left" data-aos-duration="900" data-aos-anchor-placement="bottom-bottom">Most calendars are designed for teams. Slate is designed for freelancers</p>
+                <form class="contact-form" id="contactForm" data-aos="zoom-in-up" data-aos-duration="1200" data-aos-anchor-placement="center-bottom">
                     <div class="form-field mb-25">
-                        <input type="text" placeholder="Your Name" class="non-select">
+                        <input type="text" placeholder="Your Name" class="non-select" required>
                     </div>
                     <div class="form-field mb-35">
-                        <input type="email" placeholder="Your Email" class="non-select">
+                        <input type="email" placeholder="Your Email" class="non-select" required>
                     </div>
                     <div class="form-field checkbox mb-35 non-select">
-                        <input type="checkbox" id="formCheckbox" name="formCheckbox" class="required">
+                        <input type="checkbox" id="formCheckbox" name="formCheckbox" required>
                         <label for="formCheckbox">Checkbox</label>
                     </div>
-                    <button class="btn btn__primary btn--short non-select">Send</button>
+                    <button class="btn btn__primary btn--short non-select" type="submit" form="contactForm" value="Submit">Send</button>
                 </form>
             </div>
         </section>

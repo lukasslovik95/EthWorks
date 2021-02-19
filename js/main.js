@@ -38,6 +38,9 @@ if ($(window).scrollTop() > 150) {
 
 $(document).ready(function(){
 
+  /******** aos init ********/
+  AOS.init();
+
   /******** scroll top btn ********/
   const checkWindowScroll = function() {
     if ($(window).scrollTop() > 150) {

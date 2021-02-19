@@ -1,7 +1,7 @@
 <footer class="footer pt-20 pt-md-40">
     <div class="container">
         <div class="row">
-            <div class="col-4">
+            <div class="col-4" data-aos="fade-right" data-aos-duration="900" data-aos-anchor-placement="bottom-bottom" data-aos-easing="ease-out">
                 <a class="header__logo fs-22 fs-md-40" href="index.php" title="Logo - Strona główna">
                     logo
                 </a>
@@ -12,7 +12,7 @@
                     <a href="mailto: have@nicecoding.io" class="color-light-blue fs-20">have@nicecoding.io</a>
                 </p>
             </div>
-            <div class="col-12 col-md-4 d-flex align-items-center justify-content-center justify-content-md-end">
+            <div class="col-12 col-md-4 d-flex align-items-center justify-content-center justify-content-md-end" data-aos="zoom-in" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom" data-aos-easing="ease-out">
                 <a class="btn btn__primary btn--long" href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" target="_blank">Read Whitepaper</a>
             </div>
         </div>

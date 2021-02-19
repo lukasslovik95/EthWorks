@@ -86,33 +86,6 @@
 	opacity: 0.8;
 }
 
-/* ##### VALIDATE ERROR ##### */
-input.error:not([disabled]) {
-	border-color:#c51331;
-}
-
-label.error {
-	display:none;
-	color:#c51331;
-	font-size:12px;
-	line-height:16px;
-	font-weight:normal;
-	position: relative;
-	bottom: -2px;
-}
-
-label[generated="true"] {
-	display:inline-block;
-}
-
-/* ##### HIDDEN SUBMIT ##### */
-.hidden-submit {
-	left: -10000px;
-	opacity: 0;
-	position: absolute;
-	top: -10000px;
-}
-
 @media all and (max-width: 991px) {
 
 	/* ##### CHECKBOX ##### */

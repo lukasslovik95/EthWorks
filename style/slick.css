@@ -86,14 +86,3 @@
 
 .slick-slider.slick-dots-transparent ul.slick-dots li button {background-color: #fff; opacity: 0.5; box-shadow: 1px 1px 1px rgba(0,0,0,0.2)}
 .slick-slider.slick-dots-transparent ul.slick-dots li button:hover, .slick-slider.slick-dots-transparent ul.slick-dots li button:focus, .slick-slider.slick-dots-transparent ul.slick-dots li.slick-active button {background-color: #fff; opacity: 1;}
-
-/* #### RESPONSIBLE WEB DESIGN #### */
-@media all and (max-width: 575px) {
-
-	.slick-next  {
-    right: -10px;
-  }
-  .slick-prev  {
-    left: -10px;
-	}
-}

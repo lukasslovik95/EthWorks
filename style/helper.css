@@ -1,16 +1,15 @@
 /* ##### KLASY POMOCNICZE ##### */
 
 .fw-300, .fw-light { font-weight:300; }
-.fw-600 { font-weight: 600; }
 .fw-400, .fw-normal { font-weight: normal; }
 .fw-500 { font-weight: 500; }
+.fw-600 { font-weight: 600; }
 .fw-700, .fw-bold { font-weight: bold; }
 .fw-800 { font-weight: 800; }
 .fw-900 { font-weight: 900; }
 .tt-uppercase { text-transform: uppercase; }
 .tt-lowercase { text-transform: lowercase; }
 .tt-none { text-transform: none; }
-.fs-italic { font-style: italic; }
 
 .ls-none { letter-spacing: normal; }
 .ls-1 { letter-spacing: 1px; margin-right: -1px; }
@@ -23,7 +22,6 @@
 .clear { clear: both; }
 .m-center { margin:0 auto; float: none; }
 .full { width:100%; }
-.half { width:50%; }
 .bx-rel { position: relative; }
 .bx-abs { position: absolute; }
 .no-wrap { white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
