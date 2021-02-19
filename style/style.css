@@ -1,0 +1,321 @@
+html {
+	background-color: #fff;
+}
+
+body {
+	overflow-x: hidden;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.header {
+	z-index: 1000;
+	height: 70px;
+}
+
+/* ##### COMMONS ##### */
+main { flex-grow: 1; position: relative; margin-top: 70px; }
+.anchor { position: absolute; z-index: -1; top: -70px; display: block; }
+
+/* ##### OTHERS ##### */
+
+.bx-social-fixed {
+	position: fixed;
+	z-index: 41;
+	right: 0;
+	top: 200px;
+	border-radius: 10px 0 0 10px;
+	background: rgba(255, 255, 255, 0.3);
+	backdrop-filter: blur(8px);
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+}
+
+.bx-social-fixed a {
+	min-width: 30px;
+	height: 30px;
+	padding: 0;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+.bx-social-fixed a:last-child {
+	margin-bottom: 0;
+}
+
+.intro-div {
+	background-image: url("../img/intro-div-bg.jpg");
+	background-size: cover;
+	background-position: bottom center;
+	height: 1000px;
+	background-repeat: no-repeat;
+	color: #fff;
+	transition: .3s;
+}
+
+.subscribe-form {
+	position: relative;
+}
+
+.subscribe-form .form-field input {
+	padding-right: 175px;
+}
+
+.subscribe-form button {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+.btn--scroll-to {
+	left: 23px;
+	top: 125px;
+}
+
+.intro-div__video {
+	position: relative;
+}
+
+.intro-div__video .play-button {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	animation: none;
+	height: 63px;
+	min-width: 63px;
+	border-radius: 50%;
+	font-size: 20px;
+	padding-left: 13px;
+}
+
+.intro-div__video video {
+	transition: .3s;
+	max-width: 545px;
+}
+
+.intro-div__video .modal video {
+	max-width: 100%;
+}
+
+.team-section__member {
+	text-align: center;
+	padding: 20px;
+}
+
+.team-section__member div p {
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
+}
+
+.team-section__socials {
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+}
+
+.team-section__socials a:first-child {
+	margin-right: 6px;
+}
+
+.team-section__socials a.btn--facebook {
+	background: linear-gradient(90deg, rgba(255,255,255,1) 30%, rgba(59,89,152,1) 50%, rgba(255,255,255,1) 50%);
+	background-position: -40% center;
+	background-size: 200% 100%;
+	transition: .3s;
+}
+
+.team-section__socials a.btn--linkedin {
+	background: linear-gradient(90deg, rgba(255,255,255,1) 50%, rgba(10,102,194,1) 50%, rgba(255,255,255,1) 70%);
+	background-position: 160% center;
+	background-size: 200% 100%;
+	transition: .3s;
+}
+
+.team-section__socials a.btn--facebook:hover {
+	background-position: 0 center;
+}
+
+.team-section__socials a.btn--linkedin:hover {
+	background-position: 100% center;
+}
+
+.team-section__socials a.btn--facebook i,
+.team-section__socials a.btn--linkedin i {
+	transition: .3s;
+}
+
+.team-section__socials a.btn--facebook:hover i {
+color: rgba(59,89,152,1);
+margin-right: 10px;
+}
+
+.team-section__socials a.btn--linkedin:hover i {
+	color: rgba(10,102,194,1);
+	margin-left: 10px;
+}
+
+.contact-form {
+	padding: 85px 40px 25px;
+	background: #4250BF;
+	border-radius: 13px;
+}
+
+/* ##### ICO-GO-TOP ##### */
+.ico-go-top {
+	width: 40px;
+	height: 40px;
+	border: 2px solid #4250BF;
+	border-radius: 50%;
+	background: #fff;
+	position: fixed;
+	z-index: 88;
+	right: 20px;
+	bottom: 20px;
+	display: none;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+.ico-go-top::after {
+	content: '';
+	display: block;
+	width: 12px;
+	height: 12px;
+	border-top: 2px solid #4250BF;
+	border-right: 2px solid #4250BF;
+	transform: rotate(-45deg);
+	position: absolute;
+	top: 54%;
+	left: 56%;
+	margin: -5px 0 0 -8px;
+	transition: .3s;
+}
+.ico-go-top:hover {
+	animation: pulse--blue 2s infinite;
+}
+.ico-go-top:hover::after {
+	border-top: 2px solid #4250BF;
+	border-right: 2px solid #4250BF;
+}
+
+.ico-go-top.is-bottom { margin-bottom: 70px; }
+
+/* #### FOOTER #### */
+
+footer.footer {
+	background: linear-gradient(180deg, #FAFBFF 0%, #EFF1F9 41.68%, #E9ECF6 49.59%, #CED3E8 93.91%);
+}
+
+/* #### RESPONSIBLE WEB DESIGN #### */
+@media all and (max-width: 1399px) {
+	.intro-div {
+		height: 1000px;
+	}
+
+	.intro-div__video video {
+		max-width: 100%;
+	}
+}
+
+@media all and (max-width: 1199px) {
+	.intro-div {
+		height: auto;
+		background-size: 1200px;
+		background-position: top center;
+	}
+
+	.btn--scroll-to {
+		left: 0;
+		top: 0;
+		margin-top: 125px;
+		margin-bottom: 125px;
+	}
+}
+
+@media all and (max-width: 991px) {
+
+@media all and (max-width: 767px) {
+
+	.intro-div {
+		background-size: 1000px;
+		background-position: top -116px left -238px;
+	}
+
+	.subscribe-form button {
+		position: relative;
+		margin-top: 16px;
+		width: 100%;
+	}
+
+	.btn--scroll-to {
+		margin-top: 40px;
+		margin-bottom: 70px;
+	}
+
+	.subscribe-form .form-field input {
+		padding-right: 20px;
+	}
+
+	.team-section__member {
+		padding: 13px;
+	}
+
+	.team-section__socials {
+		margin-top: 15px;
+	}
+
+	footer.footer {
+		background-size: 100% calc(100% - 120px);
+		background-repeat: no-repeat;
+	}
+
+	.ico-go-top.is-bottom {margin-bottom: 120px;}
+
+}
+
+@media all and (max-width: 575px) {
+
+	.bx-social-fixed {
+		top: auto;
+		bottom: 160px;
+	}
+
+	.intro-div {
+		background-position: top -155px right -130px;
+	}
+
+	.team-section__member img {
+		width: 115px;
+	}
+
+	.contact-form {
+		padding-left: 6%;
+		padding-right: 6%;
+	}
+
+  .ico-go-top.is-bottom {margin-bottom: 80px;}
+
+}
+
+@media all and (max-width: 449px) {
+
+	.intro-div {
+		background-position: top -80px right -420px;
+	}
+
+	.team-section__member {
+		padding: 3px;
+	}
+
+}
+
+
+/*Retina graphics!*/
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5){}
+}

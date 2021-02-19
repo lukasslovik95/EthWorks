@@ -1,0 +1,129 @@
+/* ##### LABEL ##### */
+.form-field label:not(.error) {
+	display: inline-block;
+	line-height: 26px;
+	font-size: 18px;
+  color: #eee;
+}
+
+/* ##### INPUT ##### */
+.form-field input:not(.btn) {
+	height: 46px;
+	line-height: 20px;
+	background-color: #fff;
+	border: none;
+	border-radius: 23px;
+	display: block;
+	padding: 0 20px;
+	width: 100%;
+	font-size: 17px;
+  color:#576677;
+	transition: all 0.3s ease-in-out;
+}
+
+.form-field input:not([disabled]):focus {
+	box-shadow: 0 0 20px 0 rgba(255,255,255,.4);
+	outline:0
+}
+
+/* ##### CHECKBOX ##### */
+.form-field.checkbox input[type=checkbox] {
+	opacity:0;
+	display:none;
+	visibility: hidden;
+	position: absolute;
+	left: -10000px;
+}
+
+.form-field.checkbox {
+	position:relative;
+	height: 24px;
+}
+
+.form-field.checkbox label:not(.error) {
+	position: relative;
+	display: block;
+	cursor: pointer;
+	margin-left: 32px;
+	padding:0;
+	font-size: 17px;
+	line-height: 24px;
+	font-weight: 400;
+}
+.form-field.checkbox label:not(.error):before {
+	content: '';
+	position: absolute;
+	left: -32px;
+	top: 0;
+	width: 24px;
+	height: 24px;
+	border: none;
+	border-radius: 4px;
+	background: #fff;
+}
+
+/* checked mark aspect */
+.form-field.checkbox input[type="checkbox"] + label:after {
+	content: '\f00c';
+	position: absolute;
+	top: 8px;
+	left: -29px;
+	font-family:"Font Awesome 5 Pro";
+	color: #576677;
+	width: 9px;
+	height: 9px;
+	font-size: 0;
+	line-height: 9px;
+	text-align: center;
+	transition: font-size 0.2s ease-in-out;
+}
+
+.form-field.checkbox input[type="checkbox"]:checked + label:after {
+	font-size: 19px;
+}
+
+.form-field.checkbox input[type="checkbox"][disabled] + label {
+	opacity: 0.8;
+}
+
+/* ##### VALIDATE ERROR ##### */
+input.error:not([disabled]) {
+	border-color:#c51331;
+}
+
+label.error {
+	display:none;
+	color:#c51331;
+	font-size:12px;
+	line-height:16px;
+	font-weight:normal;
+	position: relative;
+	bottom: -2px;
+}
+
+label[generated="true"] {
+	display:inline-block;
+}
+
+/* ##### HIDDEN SUBMIT ##### */
+.hidden-submit {
+	left: -10000px;
+	opacity: 0;
+	position: absolute;
+	top: -10000px;
+}
+
+@media all and (max-width: 991px) {
+
+	/* ##### CHECKBOX ##### */
+	.form-field.checkbox label:not(.error) { font-size: 14px; line-height: 22px; }
+	.form-field.radio label:not(.error) { font-size: 14px; line-height: 22px; }
+
+}
+
+@media all and (max-width: 767px) {
+
+	/* ##### LABEL ##### */
+	.form-field label:not(.error) { font-size: 14px; }
+
+}

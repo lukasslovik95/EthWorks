@@ -1,0 +1,101 @@
+.header {
+  background: #fff;
+}
+
+.header.fixed-header {
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  animation: smoothScroll 0.5s forwards;
+  height: 50px;
+  box-shadow: 0 0 15px 0 rgba(0,0,0,0.4);
+}
+
+@keyframes smoothScroll {
+  0% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.header.fixed-header .header__logo {
+  font-size: 22px;
+  line-height: 27px;
+}
+
+.header__logo {
+  font-size: 39px;
+  line-height: 50px;
+  display: inline-block;
+  -webkit-transform:scale(1.2,1); /* Safari and Chrome */
+  -moz-transform:scale(1.2,1); /* Firefox */
+  -ms-transform:scale(1.2,1); /* IE 9 */
+  -o-transform:scale(1.2,1); /* Opera */
+  transform:scale(1.2,1); /* W3C */
+  color: #263396;
+}
+
+nav li a {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  margin-left: 40px;
+  transition: .3s;
+  color: #1C2085;
+}
+
+nav li:first-child a {
+  margin-left: 0;
+}
+
+nav > ul > li a {
+  padding: 0 4px 6px;
+  position: relative;
+  text-decoration: none;
+}
+
+nav a:after {
+  content: '';
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  transition: all .35s ease;
+  opacity: 0;
+}
+
+nav a:after {
+  content: '';
+  left: 0;
+  bottom: 0;
+  border-bottom: 2px solid #5454D4;
+}
+
+nav > ul > li a:hover:before,
+nav > ul > li a:hover:after {
+  transform: translate(0,0) !important;
+  opacity: .5 !important;
+}
+
+nav > ul > li.current a:before,
+nav > ul > li.current a:after {
+  transform: translate(0,0) !important;
+  opacity: 1 !important;
+}
+
+/* #### RESPONSIBLE WEB DESIGN #### */
+@media all and (max-width: 767px) {
+  .header__logo {
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  header.header nav li a {
+    margin-left: 25px;
+    margin-top: 8px;
+  }
+}
